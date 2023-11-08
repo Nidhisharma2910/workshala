@@ -1,215 +1,117 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#C9D8FF"
+    android:background="@color/white"
+    android:fillViewport="true"
     tools:context=".MainActivity">
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="374dp"
-        android:layout_height="666dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="40dp"
-        android:background="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card1"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="@dimen/_280sdp"
+            app:cardCornerRadius="@dimen/_30sdp"
+            app:cardMaxElevation="@dimen/_100sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-            <TextView
-                android:id="@+id/work"
-                android:layout_width="180dp"
-                android:layout_height="72dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="32dp"
-                android:fontFamily="@font/azonix"
-                android:gravity="center"
-                android:text="WORK"
-                android:textColor="@color/purple"
-                android:textSize="40sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-            <TextView
-                android:id="@+id/shala"
-                android:layout_width="182dp"
-                android:layout_height="61dp"
-                android:layout_marginStart="-15dp"
-                android:layout_marginTop="44dp"
-                android:layout_marginEnd="24dp"
-                android:fontFamily="@font/azonix"
-                android:text="SHALA"
-                android:textColor="@color/black"
-                android:textSize="40sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/work"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:id="@+id/text1"
-                android:layout_width="127dp"
-                android:layout_height="33dp"
-                android:layout_marginStart="124dp"
-                android:layout_marginEnd="124dp"
-                android:fontFamily="@font/inter"
-                android:text="Welcome"
-                android:textColor="@color/purple"
-                android:textSize="24sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/shala" />
-
-            <ImageView
-                android:id="@+id/Image1"
-                android:layout_width="64dp"
-                android:layout_height="67dp"
-                android:layout_marginStart="156dp"
-                android:layout_marginTop="50dp"
-                android:layout_marginEnd="156dp"
-                android:src="@drawable/profile_icon"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/text1" />
-
-            <TextView
-                android:id="@+id/what_are_yo"
-                android:layout_width="215dp"
-                android:layout_height="26dp"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginStart="100dp"
-                android:layout_marginEnd="100dp"
-                android:fontFamily="@font/inter"
-                android:gravity="center_horizontal|top"
-                android:text="@string/what_are_yo"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/Image1" />
-
-
-            <TextView
-                android:id="@+id/text2"
-                android:layout_width="154dp"
-                android:layout_height="183dp"
-                android:layout_marginStart="24dp"
-                android:layout_marginTop="68dp"
-                android:background="@drawable/box"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/what_are_yo" />
-
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="wrap_content"
-                android:layout_height="35dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="28dp"
-                android:fontFamily="@font/inter"
-                android:text="Learner"
-                android:textColor="@color/black"
-                android:textSize="24sp"
-                app:layout_constraintEnd_toEndOf="@+id/text2"
-                app:layout_constraintTop_toBottomOf="@+id/imageView4" />
-
-            <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="28dp"
-                android:layout_height="26dp"
-                android:layout_marginTop="32dp"
-                android:layout_marginEnd="64dp"
-                android:gravity="center"
-                android:src="@drawable/baseline_circle_24"
-                app:layout_constraintEnd_toEndOf="@+id/text2"
-                app:layout_constraintTop_toTopOf="@+id/text2" />
-
-            <ImageView
-                android:id="@+id/imageView4"
-                android:layout_width="58dp"
-                android:layout_height="34dp"
-                android:layout_marginStart="48dp"
-                android:gravity="center"
-                android:src="@drawable/book"
-                app:layout_constraintStart_toStartOf="@+id/text2"
-                app:layout_constraintTop_toBottomOf="@+id/imageView" />
-
-            <TextView
-                android:id="@+id/text3"
-                android:layout_width="162dp"
-                android:layout_height="184dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="68dp"
-                android:layout_marginEnd="24dp"
-                android:background="@drawable/box"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.071"
-                app:layout_constraintStart_toEndOf="@+id/text2"
-                app:layout_constraintTop_toBottomOf="@+id/what_are_yo" />
-
-            <ImageView
-                android:id="@+id/imageView2"
-                android:layout_width="28dp"
-                android:layout_height="26dp"
-                android:layout_marginStart="64dp"
-                android:layout_marginTop="32dp"
-                android:gravity="center"
-                android:src="@drawable/baseline_circle_24"
-                app:layout_constraintStart_toStartOf="@+id/text3"
-                app:layout_constraintTop_toTopOf="@+id/text3" />
-
-            <ImageView
-                android:id="@+id/imageView3"
-                android:layout_width="58dp"
-                android:layout_height="34dp"
-                android:layout_marginEnd="56dp"
-                android:gravity="center"
-                android:src="@drawable/half"
-                app:layout_constraintEnd_toEndOf="@+id/text3"
-                app:layout_constraintTop_toBottomOf="@+id/imageView2" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="36dp"
-                android:layout_marginTop="12dp"
-                android:layout_marginEnd="20dp"
-                android:fontFamily="@font/inter"
-                android:text="Employer"
-                android:textColor="@color/black"
-                android:textSize="24sp"
-                app:layout_constraintEnd_toEndOf="@+id/text3"
-                app:layout_constraintTop_toBottomOf="@+id/imageView3" />
-
-
-            <Button
-                android:id="@+id/conti"
-                android:layout_width="311dp"
-                android:layout_height="55dp"
-                android:layout_marginStart="32dp"
-                android:layout_marginTop="48dp"
-                android:layout_marginEnd="32dp"
-                android:background="@drawable/rounded_button_background"
-                android:text="Continue"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/text3" />
-
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    </androidx.cardview.widget.CardView>
-
-
+                <ImageView
+                    android:id="@+id/image1"
+                    android:layout_width="@dimen/_270sdp"
+                    android:layout_height="@dimen/_170sdp"
+                    android:layout_marginStart="@dimen/_42sdp"
+                    android:layout_marginTop="@dimen/_32sdp"
+                    android:layout_marginEnd="@dimen/_40sdp"
+                    android:src="@drawable/group"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.717"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
 
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="242dp"
+            android:layout_height="62dp"
+            android:layout_marginStart="109dp"
+            android:layout_marginTop="@dimen/_32sdp"
+            android:layout_marginEnd="@dimen/_84sdp"
+            android:fontFamily="@font/inter"
+            android:text="@string/welcome"
+            android:textSize="@dimen/_32sdp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/card1" />
 
+        <TextView
+            android:id="@+id/work"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:fontFamily="@font/azonix"
+            android:gravity="center"
+            android:text="@string/work"
+            android:textColor="@color/purple"
+            android:textSize="@dimen/_35ssp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/welcome" />
 
+        <TextView
+            android:id="@+id/shala"
+            android:layout_width="@dimen/_152sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginStart="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_36sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:fontFamily="@font/azonix"
+            android:text="@string/shala"
+            android:textSize="@dimen/_35ssp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/work"
+            app:layout_constraintTop_toBottomOf="@+id/welcome" />
+
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="@dimen/_74sdp"
+            android:layout_height="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_120sdp"
+            android:layout_marginTop="@dimen/_60sdp"
+            android:background="@color/purple"
+            android:src="@drawable/box"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/work" />
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="@dimen/_300sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_70sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:backgroundTint="@color/purple"
+            android:text="Next"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -81,7 +81,8 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="24dp"
-        android:background="@drawable/box"
+        android:background="@drawable/box2"
+        android:paddingStart="@dimen/_10sdp"
         android:hint=" Email"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -129,7 +130,7 @@
     <CheckBox
         android:id="@+id/rememberMeCheckBox"
         android:layout_width="157dp"
-        android:layout_height="41dp"
+        android:layout_height="48dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="230dp"

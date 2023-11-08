@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">workshala2</string>
-    <string name="welcome">Welcome</string>
     <string name="workshala">WORKSHALA\n</string>
     <string name="what_are_yo">What are you looking for?</string>
+    <string name="welcome">Welcome to</string>
+    <string name="work">WORK</string>
+    <string name="shala">SHALA</string>
 </resources>

@@ -29,9 +29,14 @@
         <activity android:name=".SignInActivity"
             android:exported="true">
         </activity>
-        <activity android:name=".ProfileActivity"
+        <activity android:name=".ForgotActivity"
             android:exported="true">
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
 
     </application>
 

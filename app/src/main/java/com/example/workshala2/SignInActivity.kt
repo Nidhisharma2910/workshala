@@ -4,18 +4,27 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.example.workshala2.databinding.ActivitySigninBinding
+
 
 class SignInActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivitySigninBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_signin)
+        binding = ActivitySigninBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        val profile =findViewById<TextView>(R.id.signInButton)
-        profile.setOnClickListener {
-            val intent = Intent(this, ProfileActivity::class.java)
+        binding.forgot.setOnClickListener {
+            val intent = Intent(this, ForgotActivity::class.java)
             startActivity(intent)
         }
 
 
+
+
+
     }
+
 }

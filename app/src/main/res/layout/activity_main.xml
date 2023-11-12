@@ -89,29 +89,19 @@
             app:layout_constraintStart_toEndOf="@+id/work"
             app:layout_constraintTop_toBottomOf="@+id/welcome" />
 
-        <ImageView
-            android:id="@+id/image2"
-            android:layout_width="@dimen/_74sdp"
-            android:layout_height="@dimen/_10sdp"
-            android:layout_marginStart="@dimen/_120sdp"
-            android:layout_marginTop="@dimen/_60sdp"
-            android:background="@color/purple"
-            android:src="@drawable/box"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/work" />
 
         <Button
             android:id="@+id/next"
             android:layout_width="@dimen/_300sdp"
             android:layout_height="@dimen/_50sdp"
-            android:layout_marginStart="@dimen/_16sdp"
-            android:layout_marginTop="@dimen/_70sdp"
-            android:layout_marginEnd="@dimen/_16sdp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="56dp"
+            android:layout_marginEnd="16dp"
             android:backgroundTint="@color/purple"
             android:text="Next"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/image2" />
+            app:layout_constraintTop_toBottomOf="@+id/work" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

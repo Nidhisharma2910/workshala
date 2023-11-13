@@ -139,6 +139,7 @@
                 android:layout_height="match_parent">
 
                 <EditText
+                    android:id="@+id/input_email"
                     android:layout_width="@dimen/_310sdp"
                     android:layout_height="@dimen/_40sdp"
                     android:background="#C2C2C2"
@@ -253,6 +254,7 @@
             android:layout_marginEnd="@dimen/_8sdp"
             android:backgroundTint="@color/purple"
             android:text="Sign Up"
+            android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/card8" />

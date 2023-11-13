@@ -9,10 +9,6 @@
         android:id="@+id/courses"
         android:icon="@drawable/tutorials"/>
 
-    <item android:title="Jobs"
-        android:id="@+id/job"
-        android:icon="@drawable/job"/>
-
     <item android:title="Profile"
         android:id="@+id/profile"
         android:icon="@drawable/user"/>

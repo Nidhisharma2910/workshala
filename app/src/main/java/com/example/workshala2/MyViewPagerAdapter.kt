@@ -13,11 +13,12 @@ class MyViewPagerAdapter(fragmentActivity: FragmentActivity) :
             1 -> NotificationFragment()
             2 -> SettingsFragment()
             3 -> SkillsFragment()
+            4 -> PerksFragment()
             else -> HomeFragment()
         }
     }
 
     override fun getItemCount(): Int {
-        return 4
+        return 5
     }
 }

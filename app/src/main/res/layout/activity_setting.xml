@@ -175,9 +175,10 @@
             android:layout_height="30dp"
             android:layout_gravity="end|center"
             android:layout_marginStart="180dp"
-            android:layout_marginTop="386dp"
+            android:layout_marginTop="388dp"
             android:layout_marginEnd="45dp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.812"
             app:layout_constraintStart_toEndOf="@+id/textView18"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -255,6 +256,7 @@
 
         <TextView
 
+            android:id="@+id/textView23"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
@@ -265,6 +267,8 @@
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+
 
         <View
             android:id="@+id/rectangle_3"
@@ -291,6 +295,44 @@
             app:layout_constraintEnd_toEndOf="@+id/rectangle_3"
             app:layout_constraintStart_toStartOf="@+id/rectangle_3"
             app:layout_constraintTop_toBottomOf="@+id/themSwitch2" />
+
+        <View
+            android:id="@+id/rectangle_"
+            android:layout_width="100dp"
+            android:layout_height="23dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="192dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/rectangle_1"
+            android:backgroundTint="#F5F5F5"
+            app:layout_constraintStart_toEndOf="@+id/textView23"
+            app:layout_constraintTop_toBottomOf="@+id/rectangle_3" />
+
+        <TextView
+            android:id="@+id/india"
+            android:layout_width="60dp"
+            android:layout_height="23dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/india"
+            app:layout_constraintStart_toStartOf="@+id/rectangle_"
+            app:layout_constraintTop_toBottomOf="@+id/rectangle_3" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/purple"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:menu="@menu/bottom_nav">
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

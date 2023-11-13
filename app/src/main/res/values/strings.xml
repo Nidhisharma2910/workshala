@@ -7,7 +7,11 @@
     <string name="shala">SHALA</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="able_to_run"><![CDATA[Able to run design sprint to deliver the best user experience based on research. \nAble to lead a team, delegate, & initiative.\nAble to mold the junior designer to strategize how certain feature needs to be collected.\nAble to aggregate and be data minded on the decision that\'s taking place.]]></string>
+    <string name="able_to_run"><![CDATA[Able to run design sprint to deliver the best user experience based on research.
+     \nAble to lead a team, delegate, & initiative.
+     \nAble to mold the junior designer to strategize how certain feature needs to be collected.
+     \nAble to aggregate and be data minded on the decision that\'s taking place.]]></string>
     <string name="experience_">Experience as UI/UX Designer for 2+ years.\nUse platform Figma. Sketch, and Miro.\nAbility to analyze and convert numerical design sprints into UI/UX\nHave experience in relevant B2C user centric products perviously.\n</string>
     <string name="google_llc_"><![CDATA[Google LLC is an American multinational technology company that focuses on search engine technology, online advertising, cloud computing.. computer software, quantum computing. e- commerce, artificial intelligence, and consumer electronics]]></string>
+    <string name="english">English\n</string>
 </resources>

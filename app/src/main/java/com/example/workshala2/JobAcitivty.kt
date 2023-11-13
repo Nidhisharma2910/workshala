@@ -1,13 +1,16 @@
 package com.example.workshala2
 
 
+import android.content.Intent
 import com.example.workshala2.R
 import android.os.Bundle
+import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager2.widget.ViewPager2
 import androidx.viewpager2.widget.ViewPager2.OnPageChangeCallback
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayout.OnTabSelectedListener
+
 
 
 class JobActivity : AppCompatActivity() {
@@ -35,5 +38,19 @@ class JobActivity : AppCompatActivity() {
                 tabLayout?.getTabAt(position)?.select()
             }
         })
+
+
+        val shareToOtherApps = findViewById<ImageView>(R.id.shareToOtherApps)
+
+        val message = "Hello, this is the message to share!"
+
+        shareToOtherApps.setOnClickListener {
+            val intent = Intent()
+            intent.action = Intent.ACTION_SEND
+            intent.putExtra(Intent.EXTRA_TEXT, message)
+            intent.type = "text/plain"
+            startActivity(Intent.createChooser(intent, "Share to: "))
+        }
+
     }
 }

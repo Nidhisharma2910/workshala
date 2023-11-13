@@ -14,31 +14,22 @@
 
     <TextView
         android:id="@+id/able_to_run"
-        android:layout_width="388dp"
-        android:layout_height="155dp"
-        android:paddingStart="@dimen/_8sdp"
-        android:paddingEnd="@dimen/_8sdp"
+        android:layout_width="369dp"
+        android:layout_height="154dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="548dp"
+        android:layout_marginTop="28dp"
         android:fontFamily="@font/poppins"
         android:gravity="top"
+        android:paddingStart="@dimen/_8sdp"
+        android:paddingEnd="@dimen/_8sdp"
         android:text="@string/able_to_run"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.478"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:backgroundTint="@color/purple"
-        android:text="Apply"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/able_to_run" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

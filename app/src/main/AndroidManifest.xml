@@ -15,6 +15,8 @@
         <activity
             android:name=".MainActivity"
             android:exported="true">
+
+
         </activity>
         <activity android:name=".SignupActivity"
             android:exported="true">
@@ -28,6 +30,8 @@
         </activity>
         <activity android:name=".JobActivity"
             android:exported="true">
+
+
         </activity>
 
         <activity android:name=".SettingActivity"
@@ -35,7 +39,7 @@
 
         </activity>
 
-        <activity android:name=".FilterActivity"
+        <activity android:name=".FilterTwoActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -44,12 +48,13 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".MainActivityParam"
+        <activity android:name=".FilterFiveActivity"
             android:exported="true">
-
         </activity>
 
-
+        <activity android:name=".FilterEightActivity"
+            android:exported="true">
+        </activity>
 
         <meta-data
             android:name="preloaded_fonts"

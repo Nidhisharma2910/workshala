@@ -26,28 +26,29 @@
 
         <TextView
             android:id="@+id/work"
-            android:layout_width="156dp"
+            android:layout_width="0dp"
             android:layout_height="62dp"
             android:layout_marginTop="40dp"
             android:fontFamily="@font/azonix"
-            android:gravity="center"
+            android:gravity="end"
             android:text="@string/work"
             android:textColor="@color/purple"
             android:textSize="@dimen/_35ssp"
             android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/shala"
             app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
         <TextView
             android:id="@+id/shala"
-            android:layout_width="@dimen/_152sdp"
+            android:layout_width="0dp"
             android:layout_height="@dimen/_40sdp"
-            android:layout_marginTop="48dp"
-            android:layout_marginEnd="16dp"
+            android:layout_marginTop="40dp"
             android:fontFamily="@font/azonix"
             android:text="@string/shala"
             android:textSize="@dimen/_35ssp"
             android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/work"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
@@ -198,6 +199,7 @@
                android:layout_height="match_parent">
 
                <EditText
+                   android:id="@+id/passwordEditText"
                    android:layout_width="@dimen/_310sdp"
                    android:layout_height="@dimen/_40sdp"
                    android:background="#C2C2C2"
@@ -228,6 +230,7 @@
                 android:layout_height="match_parent">
 
                 <EditText
+                    android:id="@+id/confirmPasswordEditText"
                     android:layout_width="@dimen/_310sdp"
                     android:layout_height="@dimen/_40sdp"
                     android:background="#C2C2C2"

@@ -31,12 +31,10 @@
                     android:id="@+id/image1"
                     android:layout_width="@dimen/_270sdp"
                     android:layout_height="@dimen/_170sdp"
-                    android:layout_marginStart="@dimen/_42sdp"
-                    android:layout_marginTop="@dimen/_32sdp"
-                    android:layout_marginEnd="@dimen/_40sdp"
+                    android:layout_marginTop="48dp"
+                    android:gravity="center"
                     android:src="@drawable/group"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.717"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -58,37 +56,33 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/card1" />
 
+
         <TextView
             android:id="@+id/work"
-            android:layout_width="@dimen/_150sdp"
-            android:layout_height="@dimen/_50sdp"
-            android:layout_marginStart="@dimen/_16sdp"
-            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_width="160dp"
+            android:layout_height="61dp"
+            android:layout_marginTop="24dp"
             android:fontFamily="@font/azonix"
             android:gravity="center"
             android:text="@string/work"
             android:textColor="@color/purple"
             android:textSize="@dimen/_35ssp"
             android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/shala"
             app:layout_constraintTop_toBottomOf="@+id/welcome" />
 
         <TextView
             android:id="@+id/shala"
             android:layout_width="@dimen/_152sdp"
             android:layout_height="@dimen/_40sdp"
-            android:layout_marginStart="@dimen/_1sdp"
-            android:layout_marginTop="@dimen/_36sdp"
-            android:layout_marginEnd="@dimen/_16sdp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="21dp"
             android:fontFamily="@font/azonix"
             android:text="@string/shala"
             android:textSize="@dimen/_35ssp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/work"
             app:layout_constraintTop_toBottomOf="@+id/welcome" />
-
 
         <Button
             android:id="@+id/next"

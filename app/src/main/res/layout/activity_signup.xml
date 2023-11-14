@@ -18,42 +18,37 @@
             android:id="@+id/imageView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/_123sdp"
             android:layout_marginTop="@dimen/_16sdp"
-            android:layout_marginEnd="@dimen/_123sdp"
             android:src="@drawable/group"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/shala"
+            app:layout_constraintStart_toStartOf="@+id/work"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/work"
-            android:layout_width="@dimen/_150sdp"
-            android:layout_height="@dimen/_50sdp"
-            android:layout_marginStart="@dimen/_20sdp"
-            android:layout_marginTop="@dimen/_32sdp"
+            android:layout_width="156dp"
+            android:layout_height="62dp"
+            android:layout_marginTop="40dp"
             android:fontFamily="@font/azonix"
             android:gravity="center"
             android:text="@string/work"
             android:textColor="@color/purple"
             android:textSize="@dimen/_35ssp"
             android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/shala"
             app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
         <TextView
             android:id="@+id/shala"
             android:layout_width="@dimen/_152sdp"
             android:layout_height="@dimen/_40sdp"
-            android:layout_marginTop="@dimen/_38sdp"
-            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="16dp"
             android:fontFamily="@font/azonix"
             android:text="@string/shala"
             android:textSize="@dimen/_35ssp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.428"
-            app:layout_constraintStart_toEndOf="@+id/work"
             app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
         <androidx.cardview.widget.CardView

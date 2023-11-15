@@ -3,11 +3,11 @@
 
     <item android:title="Home"
         android:id="@+id/home"
-      android:icon="@drawable/home_icon"/>
+      android:icon="@drawable/home"/>
 
     <item android:title="Courses"
         android:id="@+id/courses"
-        android:icon="@drawable/tutorials"/>
+        />
 
     <item android:title="jobs"
         android:id="@+id/job"
@@ -15,6 +15,6 @@
 
     <item android:title="Profile"
         android:id="@+id/profile"
-        android:icon="@drawable/user"/>
+        />
 
 </menu>

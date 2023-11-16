@@ -2,6 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -17,17 +22,31 @@
             android:name=".MainActivity"
             android:exported="true">
 
+
         </activity>
         <activity
             android:name=".SignupActivity"
             android:exported="true">
 
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
+
+
+
         <activity
             android:name=".SignInActivity"
             android:exported="true">
 
         </activity>
+
+
+
+
         <activity
             android:name=".ForgotActivity"
             android:exported="true">
@@ -43,25 +62,38 @@
             android:exported="true">
 
         </activity>
-        <activity
-            android:name=".FilterActivity"
-            android:exported="true">
 
-        </activity>
-        <activity
-            android:name=".MainActivityParam"
-            android:exported="true">
 
-        </activity>
+
 
         <activity
             android:name=".mainActivitySwarnima"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+        </activity>
+
+
+        <activity android:name=".FilterOneActivity"
+            android:exported="true">
+
+        </activity>
+
+        <activity android:name=".FilterTwoActivity"
+            android:exported="true">
+
+        </activity>
+
+        <activity android:name=".FilterFiveActivity"
+            android:exported="true">
+        </activity>
+
+        <activity android:name=".FilterEightActivity"
+            android:exported="true">
+        </activity>
+
+        <activity android:name=".FilterFourActivity"
+            android:exported="true">
+
         </activity>
 
 

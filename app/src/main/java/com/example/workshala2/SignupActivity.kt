@@ -3,17 +3,15 @@ package com.example.workshala2
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.TextView
 import android.text.InputFilter
 import android.text.InputFilter.LengthFilter
-import android.util.Patterns
 import android.widget.EditText
 import android.widget.Toast
 import android.text.Editable
 import android.text.TextWatcher
-import com.example.workshala2.databinding.ActivityMainBinding
+import android.widget.Button
 import com.example.workshala2.databinding.ActivitySignupBinding
-import com.google.android.material.textfield.TextInputLayout
+
 
 class SignupActivity : AppCompatActivity() {
     private lateinit var binding: ActivitySignupBinding
@@ -24,6 +22,22 @@ class SignupActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivitySignupBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+
+        val button: Button = findViewById(R.id.button)
+        val passwordEditText: EditText = findViewById(R.id.passwordEditText)
+        val confirmPasswordEditText: EditText = findViewById(R.id.confirmPasswordEditText)
+
+        button.setOnClickListener {
+            val password = passwordEditText.text.toString()
+            val confirmPassword = confirmPasswordEditText.text.toString()
+
+            if (password == confirmPassword) {
+                showToast("Passwords match!")
+            } else {
+                showToast("Passwords do not match!")
+            }
+        }
 
         binding.log.setOnClickListener {
             val intent = Intent(this, SignInActivity::class.java)
@@ -62,8 +76,12 @@ class SignupActivity : AppCompatActivity() {
 
     }
 
-
+    private fun showToast(message: String) {
+        // Display a simple toast message
+        Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
     }
+
+}
 
 
 

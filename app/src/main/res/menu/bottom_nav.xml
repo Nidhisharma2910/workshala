@@ -3,11 +3,15 @@
 
     <item android:title="Home"
         android:id="@+id/home"
-      android:icon="@drawable/baseline_home_24"/>
+      android:icon="@drawable/home_icon"/>
 
     <item android:title="Courses"
         android:id="@+id/courses"
-        android:icon="@drawable/tutorials"/>
+        android:icon="@drawable/online"/>
+
+    <item android:title="jobs"
+        android:id="@+id/job"
+        android:icon="@drawable/jobs"/>
 
     <item android:title="Profile"
         android:id="@+id/profile"

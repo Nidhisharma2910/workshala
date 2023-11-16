@@ -8,26 +8,12 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 object RetrofitClient {
 
-    private const val BASE_URL = "workshala-api.onrender.com/"
+    private const val BASE_URL = "https://workshala-api.onrender.com/"
 
-    private val okHttpClient = OkHttpClient.Builder()
-        .addInterceptor { chain ->
-            val original = chain.request()
-
-            val requestBuilder = original.newBuilder()
-                .method(original.method(), original.body())
-
-            val request = requestBuilder.build()
-            chain.proceed(request)
-        }.build()
-
-    val instance: Api by lazy{
-        val retrofit = Retrofit.Builder()
-            .baseUrl(BASE_URL)
-            .addConverterFactory(GsonConverterFactory.create())
-            .build()
-
-        retrofit.create(Api::class.java)
-    }
+    val retrofit = Retrofit.Builder()
+        .baseUrl(BASE_URL)
+        .addConverterFactory(GsonConverterFactory.create())
+        .build()
+        .create(Api::class.java)
 
 }

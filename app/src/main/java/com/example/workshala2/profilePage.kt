@@ -1,4 +1,4 @@
-package com.example.intershala
+package com.example.workshala2
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

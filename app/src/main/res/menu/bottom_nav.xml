@@ -3,18 +3,18 @@
 
     <item android:title="Home"
         android:id="@+id/home"
-      android:icon="@drawable/home"/>
+      android:icon="@drawable/home_icon"/>
 
     <item android:title="Courses"
         android:id="@+id/courses"
-        />
+        android:icon="@drawable/online"/>
 
     <item android:title="jobs"
         android:id="@+id/job"
-        android:icon="@drawable/job"/>
+        android:icon="@drawable/jobs"/>
 
     <item android:title="Profile"
         android:id="@+id/profile"
-        />
+        android:icon="@drawable/user"/>
 
 </menu>

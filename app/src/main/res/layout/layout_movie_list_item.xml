@@ -5,8 +5,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     app:cardBackgroundColor="@color/white"
     app:cardCornerRadius="15dp"
-    android:padding="10dp"
-    android:layout_margin="5dp"
+    android:padding="5dp"
+    android:layout_margin="20dp"
     android:id="@+id/cardView">
 
 
@@ -19,9 +19,9 @@
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_130sdp"
+            android:layout_height="@dimen/_42sdp"
             android:id="@+id/ivMovieImg"
-            android:scaleType="centerCrop"
+            android:scaleType="center"
             android:src="@drawable/icon_crypto1"/>
 
         <TextView
@@ -29,6 +29,7 @@
             android:textColor="@color/black"
             android:textStyle="bold"
             android:text="Crypto"
+            android:textAlignment="center"
             android:textSize="@dimen/_13ssp"
             android:layout_margin="@dimen/_5sdp"
             android:padding="@dimen/_5sdp"

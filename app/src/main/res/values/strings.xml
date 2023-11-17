@@ -16,4 +16,15 @@
     <string name="english">English\n</string>
     <string name="india">India\n</string>
     <string name="some_id">#000000</string>
+<!--    <string name="app_name">intershala</string>-->
+    <string name="title_activity_profile">profile</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="fav">Your Favorite</string>
+    <string name="friends">Tell Your Friends</string>
+    <string name="payments">Payments</string>
+    <string name="setting">Settings</string>
+    <string name="logout">Log Out</string>
+    <string name="promotion">Promotions</string>
 </resources>

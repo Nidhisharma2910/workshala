@@ -3,20 +3,15 @@
 
     <item android:title="Home"
         android:id="@+id/home"
-      android:icon="@drawable/icon_home"/>
+        android:icon="@drawable/ic_home_black_24dp"/>
 
     <item android:title="Courses"
         android:id="@+id/courses"
-        android:icon="@drawable/icon_course"
-        />
-    <item android:title="Jobs"
-        android:id="@+id/job"
-        android:icon="@drawable/icon_job"/>
+        android:icon="@drawable/courses"/>
 
     <item android:title="Profile"
         android:id="@+id/profile"
-        android:icon="@drawable/icon_profile"
-        />
+        android:icon="@drawable/client"/>
 
 
 </menu>

@@ -7,7 +7,8 @@
     android:background="@color/white"
     android:fillViewport="true"
     tools:context=".SignupActivity"
-    android:padding="@dimen/_3sdp">
+    android:paddingEnd="@dimen/_3sdp"
+    android:paddingStart="@dimen/_3sdp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -74,7 +75,7 @@
                     android:layout_width="@dimen/_310sdp"
                     android:layout_height="@dimen/_40sdp"
                     android:hint="First Name"
-                    android:background="#C2C2C2"
+                    android:background="#eeeeee"
                     android:paddingStart="@dimen/_16sdp"
                     android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
                     app:counterEnabled ="true"
@@ -108,7 +109,7 @@
                     android:layout_height="@dimen/_40sdp"
                     android:hint="Last Name"
                     android:paddingStart="@dimen/_16sdp"
-                    android:background="#C2C2C2"
+                    android:background="#eeeeee"
                     android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -138,9 +139,10 @@
                     android:id="@+id/input_email"
                     android:layout_width="@dimen/_310sdp"
                     android:layout_height="@dimen/_40sdp"
-                    android:background="#C2C2C2"
+                    android:background="#eeeeee"
                     android:hint="Email"
                     android:paddingStart="@dimen/_16sdp"
+                    android:paddingEnd="@dimen/_14sdp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -169,7 +171,7 @@
                 <EditText
                     android:layout_width="@dimen/_310sdp"
                     android:layout_height="@dimen/_40sdp"
-                    android:background="#C2C2C2"
+                    android:background="#eeeeee"
                     android:hint="Mobile"
                     android:paddingStart="@dimen/_16sdp"
                     android:inputType="phone"
@@ -202,7 +204,7 @@
                    android:id="@+id/passwordEditText"
                    android:layout_width="@dimen/_310sdp"
                    android:layout_height="@dimen/_40sdp"
-                   android:background="#C2C2C2"
+                   android:background="#eeeeee"
                    android:hint="Password"
                    android:paddingStart="@dimen/_16sdp"
                    app:layout_constraintEnd_toEndOf="parent"
@@ -233,7 +235,7 @@
                     android:id="@+id/confirmPasswordEditText"
                     android:layout_width="@dimen/_310sdp"
                     android:layout_height="@dimen/_40sdp"
-                    android:background="#C2C2C2"
+                    android:background="#eeeeee"
                     android:hint="Confirm Password"
                     android:paddingStart="@dimen/_16sdp"
                     app:layout_constraintEnd_toEndOf="parent"

@@ -2,6 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,30 +17,43 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Workshala2"
         tools:targetApi="31">
+
+        <activity android:name=".mainActivitySwarnima"
+            android:exported="true">
+
+        </activity>
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
-
-
         </activity>
-
-        <activity android:name=".SignupActivity"
+        <activity
+            android:name=".SignupActivity"
             android:exported="true">
         </activity>
-        <activity android:name=".SignInActivity"
+
+        <activity
+            android:name=".SignInActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".ForgotActivity"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".JobActivity"
+            android:exported="true">
+
+
+        </activity>
+        <activity
+            android:name=".SettingActivity"
             android:exported="true">
 
         </activity>
-        <activity android:name=".ForgotActivity"
-            android:exported="true">
-        </activity>
-        <activity android:name=".JobActivity"
-            android:exported="true">
 
-
-        </activity>
-
-        <activity android:name=".SettingActivity"
+        <activity android:name=".FilterOneActivity"
             android:exported="true">
 
         </activity>
@@ -47,11 +65,19 @@
 
         <activity android:name=".FilterFiveActivity"
             android:exported="true">
+
         </activity>
 
         <activity android:name=".FilterEightActivity"
             android:exported="true">
+
         </activity>
+
+        <activity android:name=".FilterFourActivity"
+            android:exported="true">
+
+        </activity>
+
 
         <activity android:name=".MainActivity_param"
             android:exported="true">
@@ -65,9 +91,6 @@
             android:exported="true">
 
         </activity>
-        <meta-data
-            android:name="preloaded_fonts"
-            android:resource="@array/preloaded_fonts" />
 
         <activity android:name=".home_page_p"
             android:exported="true">
@@ -75,6 +98,10 @@
 
         </activity>
 
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

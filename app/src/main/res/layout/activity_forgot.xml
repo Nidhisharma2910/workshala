@@ -7,7 +7,8 @@
     android:background="@color/white"
     android:fillViewport="true"
     tools:context=".ForgotActivity"
-    android:padding="@dimen/_3sdp">
+    android:paddingEnd="@dimen/_4sdp"
+    android:paddingStart="@dimen/_3sdp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -66,9 +67,10 @@
                 android:layout_height="match_parent">
 
                 <EditText
+                    android:id="@+id/emailErrorText"
                     android:layout_width="@dimen/_310sdp"
                     android:layout_height="@dimen/_40sdp"
-                    android:background="#C2C2C2"
+                    android:background="#eeeeee"
                     android:paddingStart="@dimen/_16sdp"
                     android:hint="Email ID"
                     app:layout_constraintEnd_toEndOf="parent"

@@ -44,7 +44,15 @@ android {
 
 dependencies {
 
+<<<<<<< HEAD
     implementation("androidx.core:core-ktx:1.12.0")
+=======
+    constraints {
+        implementation("com.squareup.okhttp3:okkttp:4.11.0")
+    }
+
+    implementation("androidx.core:core-ktx:1.9.0")
+>>>>>>> d5aac00234ff5d229f48de50963790604e75d08b
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.10.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
@@ -55,10 +63,17 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
     implementation ("com.google.android.material:material:1.10.0")
     implementation ("androidx.viewpager2:viewpager2:1.0.0")
+<<<<<<< HEAD
     implementation ("com.squareup.retrofit2:retrofit:2.9.0")
     implementation  ("com.squareup.retrofit2:converter-gson:2.1.0")
+=======
+//    implementation ("com.squareup.retrofit2:retrofit:2.7.1")
+//    implementation  ("com.squareup.retrofit2:converter-gson:2.1.0")
+>>>>>>> d5aac00234ff5d229f48de50963790604e75d08b
     implementation ("com.google.code.gson:gson:2.10.1")
-//    implementation("com.squareup.okhttp3:okkttp:4.11.0")
+    implementation ("com.squareup.retrofit2:retrofit:2.9.0")
+
+
 
 
 }

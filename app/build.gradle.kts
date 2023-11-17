@@ -59,10 +59,9 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
     implementation ("com.google.android.material:material:1.0.0")
     implementation ("androidx.viewpager2:viewpager2:1.0.0")
-//    implementation ("com.squareup.retrofit2:retrofit:2.7.1")
-//    implementation  ("com.squareup.retrofit2:converter-gson:2.1.0")
     implementation ("com.google.code.gson:gson:2.10.1")
-    implementation ("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation ("com.squareup.retrofit2.retrofit:2.9.0")
+    implementation ("com.squareup.retrofit2.converter-json:2.9.0")
 
 
 

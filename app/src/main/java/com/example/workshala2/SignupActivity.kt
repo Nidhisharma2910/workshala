@@ -23,6 +23,7 @@ class SignupActivity : AppCompatActivity() {
         binding = ActivitySignupBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        
 
         val button: Button = findViewById(R.id.button)
         val passwordEditText: EditText = findViewById(R.id.passwordEditText)
@@ -38,7 +39,6 @@ class SignupActivity : AppCompatActivity() {
                 showToast("Passwords do not match!")
             }
         }
-
         binding.log.setOnClickListener {
             val intent = Intent(this, SignInActivity::class.java)
             startActivity(intent)
@@ -76,8 +76,8 @@ class SignupActivity : AppCompatActivity() {
 
     }
 
+
     private fun showToast(message: String) {
-        // Display a simple toast message
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
     }
 

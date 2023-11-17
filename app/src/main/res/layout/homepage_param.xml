@@ -43,7 +43,7 @@
                 android:layout_marginStart="@dimen/_57sdp"
                 android:layout_marginTop="@dimen/_18sdp"
                 android:fontFamily="@font/mulish"
-                android:text="Hello...."
+                android:text="Hello........"
                 android:textColor="@color/black"
                 android:textSize="@dimen/_12ssp"
                 app:layout_constraintStart_toStartOf="parent"

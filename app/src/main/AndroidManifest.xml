@@ -60,7 +60,6 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
         <activity android:name=".Category"
             android:exported="true">
@@ -70,6 +69,11 @@
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
 
+        <activity android:name=".home_page_p"
+            android:exported="true">
+
+
+        </activity>
 
     </application>
 

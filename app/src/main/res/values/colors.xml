@@ -5,4 +5,7 @@
     <color name="purple">#946CC3</color>
     <color name="light_purple">#E0B0FF</color>
     <color name="transparent">#ff000000 </color>
+    <color name="grey">#CCC6C6</color>
+    <color name="searchbar">#FFD3C3EF</color>
+    <color name="blue">#246BFD</color>
 </resources>

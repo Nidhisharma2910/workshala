@@ -18,43 +18,37 @@
         android:theme="@style/Theme.Workshala2"
         tools:targetApi="31">
 
+        <activity android:name=".mainActivitySwarnima"
+            android:exported="true">
+
+        </activity>
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
-
-
         </activity>
         <activity
             android:name=".SignupActivity"
             android:exported="true">
-
-
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
-
-
 
         <activity
             android:name=".SignInActivity"
             android:exported="true">
-
         </activity>
-
-
-
-
         <activity
             android:name=".ForgotActivity"
             android:exported="true">
-
         </activity>
+
         <activity
             android:name=".JobActivity"
             android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
 
         </activity>
         <activity
@@ -62,16 +56,6 @@
             android:exported="true">
 
         </activity>
-
-
-
-
-        <activity
-            android:name=".mainActivitySwarnima"
-            android:exported="true">
-
-        </activity>
-
 
         <activity android:name=".FilterOneActivity"
             android:exported="true">
@@ -85,10 +69,20 @@
 
         <activity android:name=".FilterFiveActivity"
             android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
 
         <activity android:name=".FilterEightActivity"
             android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
 
         <activity android:name=".FilterFourActivity"

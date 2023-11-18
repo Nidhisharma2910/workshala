@@ -17,7 +17,7 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 import retrofit2.Retrofit
-import retrofit2.converter.gson.GsonConverterFactory
+
 
 
 class SignInActivity : AppCompatActivity() {
@@ -54,7 +54,7 @@ class SignInActivity : AppCompatActivity() {
                 return@setOnClickListener
             }
 
-            RetrofitClient.instance.userLogin(email, password)
+            RetrofitClient.retrofit.userLogin(email, password)
                 .enqueue(object : Callback<LoginResponse> {
                     override fun onFailure(call: Call<LoginResponse>, t: Throwable) {
                         Log.e("LoginActivity", "Login request failed", t)

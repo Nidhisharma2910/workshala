@@ -10,7 +10,6 @@ import com.example.workshala2.databinding.ActivityFiltertwoBinding
 class FilterTwoActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityFiltertwoBinding
-
     lateinit var Male : CheckBox
     lateinit var Female : CheckBox
     lateinit var Others : CheckBox

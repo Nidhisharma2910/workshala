@@ -41,11 +41,6 @@
             android:name=".SignInActivity"
             android:exported="true">
         </activity>
-
-        <activity android:name=".MainActivity_param"
-            android:exported="true">
-
-        </activity>
         <activity
             android:name=".ForgotActivity"
             android:exported="true">
@@ -56,13 +51,10 @@
             android:exported="true">
 
 
-
-
         </activity>
         <activity
             android:name=".SettingActivity"
             android:exported="true">
-
 
         </activity>
 
@@ -73,8 +65,6 @@
 
         <activity android:name=".FilterTwoActivity"
             android:exported="true">
-
-
 
         </activity>
 
@@ -94,17 +84,20 @@
         </activity>
 
 
+        <activity android:name=".MainActivity_param"
+            android:exported="true">
 
+        </activity>
 
         <activity android:name="HomeActivity"
             android:exported="true">
-
 
         </activity>
 
 
         <activity android:name=".AndroidLargeActivity"
             android:exported="true">
+
 
         </activity>
         <meta-data

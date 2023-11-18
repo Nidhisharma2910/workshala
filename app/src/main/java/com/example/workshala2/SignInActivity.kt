@@ -54,7 +54,7 @@ class SignInActivity : AppCompatActivity() {
                 return@setOnClickListener
             }
 
-            RetrofitClient.instance.userLogin(email, password)
+            RetrofitClient.retrofit.userLogin(email, password)
                 .enqueue(object : Callback<LoginResponse> {
                     override fun onFailure(call: Call<LoginResponse>, t: Throwable) {
                         Log.e("LoginActivity", "Login request failed", t)

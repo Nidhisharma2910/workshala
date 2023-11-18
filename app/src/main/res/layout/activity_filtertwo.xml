@@ -16,10 +16,10 @@
 
         <ImageView
             android:id="@+id/imageView17"
-            android:layout_width="@dimen/_20sdp"
-            android:layout_height="@dimen/_20sdp"
+            android:layout_width="@dimen/_16sdp"
+            android:layout_height="@dimen/_16sdp"
             android:layout_marginStart="@dimen/_24sdp"
-            android:layout_marginTop="@dimen/_24sdp"
+            android:layout_marginTop="@dimen/_28sdp"
             android:src="@drawable/cross"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -29,26 +29,29 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="24dp"
             android:fontFamily="@font/mulish"
             android:text="Filter"
             android:textColor="@color/black"
+            android:textSize="@dimen/_24sdp"
             android:textStyle="bold"
-            android:textSize="@dimen/_28sdp"
             app:layout_constraintStart_toEndOf="@+id/imageView17"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
+        <Button
             android:id="@+id/textView32"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="117dp"
             android:layout_marginTop="28dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/white"
             android:fontFamily="@font/mulish"
             android:text="Clear Filter"
             android:textColor="#246BFD"
             android:textSize="@dimen/_16ssp"
             app:layout_constraintBottom_toBottomOf="@+id/textView28"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/textView28"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -350,9 +353,11 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="34dp"
             android:layout_marginTop="28dp"
+            android:layout_marginEnd="119dp"
+            android:fontFamily="@font/inter"
             android:text="Only Male"
             android:textColor="#8F8F8F"
-            android:fontFamily="@font/inter"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imageView18"
             app:layout_constraintTop_toBottomOf="@+id/textView32" />
 
@@ -360,11 +365,13 @@
             android:id="@+id/checkBox2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="34dp"
+            android:layout_marginStart="33dp"
             android:layout_marginTop="12dp"
+            android:layout_marginEnd="104dp"
             android:fontFamily="@font/inter"
             android:text="Only Female"
             android:textColor="#8F8F8F"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imageView1"
             app:layout_constraintTop_toBottomOf="@+id/checkBox" />
 
@@ -374,9 +381,11 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="34dp"
             android:layout_marginTop="12dp"
+            android:layout_marginEnd="141dp"
             android:fontFamily="@font/inter"
             android:text="Others"
             android:textColor="#8F8F8F"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imageView2"
             app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
 
@@ -385,9 +394,11 @@
             android:layout_height="59dp"
             android:layout_marginStart="56dp"
             android:layout_marginTop="440dp"
+            android:layout_marginEnd="39dp"
             android:backgroundTint="@color/purple"
             android:text="Apply"
             android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/jobs_intern"
             app:layout_constraintTop_toBottomOf="@+id/checkBox3" />
     </androidx.constraintlayout.widget.ConstraintLayout>

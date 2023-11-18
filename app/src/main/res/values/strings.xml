@@ -27,4 +27,6 @@
     <string name="setting">Settings</string>
     <string name="logout">Log Out</string>
     <string name="promotion">Promotions</string>
+    <string name="error_confirm_password_title">Password does not match\n</string>
+    <string name="error_confirm_password_msg">Confirm password does not match\n</string>
 </resources>

@@ -51,10 +51,7 @@
         <activity
             android:name=".SettingActivity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+
         </activity>
 
         <activity android:name=".FilterOneActivity"
@@ -91,6 +88,7 @@
         <activity android:name="HomeActivity"
             android:exported="true">
 
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -99,6 +97,11 @@
         </activity>
 
 
+        <activity android:name=".AndroidLargeActivity"
+            android:exported="true">
+
+
+        </activity>
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

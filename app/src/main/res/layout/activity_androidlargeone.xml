@@ -45,7 +45,7 @@
                     android:layout_marginStart="@dimen/_57sdp"
                     android:layout_marginTop="@dimen/_18sdp"
                     android:fontFamily="@font/mulish"
-                    android:text="Hello........"
+                    android:text="Hello..."
                     android:textColor="@color/black"
                     android:textSize="@dimen/_13ssp"
                     app:layout_constraintStart_toStartOf="parent"
@@ -192,7 +192,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_16sdp"
-                    android:layout_marginTop="@dimen/_6sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
                     android:fontFamily="@font/mulish"
                     android:text="Recent Jobs"
                     android:textColor="@color/black"
@@ -205,7 +205,7 @@
                     android:id="@+id/textView38"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_6sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
                     android:layout_marginEnd="@dimen/_24sdp"
                     android:text="See all"
                     android:textColor="@color/blue"
@@ -239,7 +239,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_24sdp"
-                    android:layout_marginTop="@dimen/_33sdp"
+                    android:layout_marginTop="@dimen/_40sdp"
                     android:background="@drawable/_bg_tech_param"
                     android:fontFamily="@font/mulish"
                     android:padding="6dp"
@@ -258,7 +258,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_24sdp"
-                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_11sdp"
                     android:background="@drawable/_bg_tech_param"
                     android:fontFamily="@font/mulish"
                     android:padding="6dp"
@@ -272,11 +272,94 @@
                     app:layout_constraintStart_toEndOf="@+id/textView39"
                     app:layout_constraintTop_toBottomOf="@+id/textView38" />
 
+                <ImageView
+                    android:id="@+id/and1"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_140sdp"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:src="@drawable/android_large_1_img"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/textView23">
+
+                </ImageView>
+
+
+                <ImageView
+                    android:id="@+id/and2"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_140sdp"
+                    android:layout_marginTop="@dimen/_24sdp"
+                    android:src="@drawable/sales_marketing"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/and1" >
+
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/and3"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_140sdp"
+                    android:src="@drawable/sales_marketing"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/and2"
+                    android:layout_marginTop="@dimen/_24sdp">
+
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/and4"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_140sdp"
+                    android:src="@drawable/sales_marketing"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/and3"
+                    android:layout_marginTop="@dimen/_24sdp">
+
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/and5"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_140sdp"
+                    android:src="@drawable/sales_marketing"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/and4"
+                    android:layout_marginTop="@dimen/_24sdp">
+
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/and6"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_140sdp"
+                    android:src="@drawable/sales_marketing"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/and5"
+                    android:layout_marginTop="@dimen/_24sdp">
+
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/and7"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_140sdp"
+                    android:src="@drawable/sales_marketing"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/and6"
+                    android:layout_marginTop="@dimen/_24sdp">
+
+                </ImageView>
+
+
+
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </ScrollView>
     </FrameLayout>
+
+
+
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView2"

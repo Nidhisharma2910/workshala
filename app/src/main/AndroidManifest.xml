@@ -20,15 +20,18 @@
 
         <activity android:name=".mainActivitySwarnima"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
 
         <activity
             android:name=".MainActivity"
             android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+
+
 
         </activity>
         <activity
@@ -59,10 +62,6 @@
             android:name=".JobActivity"
             android:exported="true">
 
-
-
-
-
         </activity>
         <activity
             android:name=".SettingActivity"
@@ -72,7 +71,6 @@
 
         <activity android:name=".FilterOneActivity"
             android:exported="true">
-
         </activity>
 
         <activity android:name=".FilterTwoActivity"
@@ -117,19 +115,19 @@
 
         </activity>
 
-    <activity android:name=".profilePage"
+    <activity android:name=".profile"
         android:exported="true">
 
-        </activity>
-
-
-        <activity android:name=".MainActivity_param"
-            android:exported="true">
 
         </activity>
 
-        <activity android:name=".ui_ux2"
+        <activity android:name=".ui_ux1"
             android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
 
         </activity>
 

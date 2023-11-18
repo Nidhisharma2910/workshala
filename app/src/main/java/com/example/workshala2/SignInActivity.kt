@@ -36,7 +36,7 @@ class SignInActivity : AppCompatActivity() {
 
         button2.setOnClickListener {
 
-            val intent = Intent(this, HomeActivity::class.java)
+            val intent = Intent(this, MainActivity_param::class.java)
             startActivity(intent)
             
             val email = editTextEmail.text.toString().trim()

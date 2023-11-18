@@ -26,8 +26,8 @@ class FilterEightActivity : AppCompatActivity() {
         binding = ActivityFiltereightBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.view.setOnClickListener {
-            val intent = Intent(this, FilterFiveActivity::class.java)
+        binding.view7.setOnClickListener {
+            val intent = Intent(this, FilterOneActivity::class.java)
             startActivity(intent)
         }
 
@@ -36,7 +36,44 @@ class FilterEightActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-         Goggle = findViewById(R.id.checkBox)
+        binding.imageView18.setOnClickListener {
+            val intent = Intent(this, filter_three::class.java)
+            startActivity(intent)
+        }
+
+        binding.imageView2.setOnClickListener {
+            val intent = Intent(this, FilterFourActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.view.setOnClickListener {
+            val intent = Intent(this, FilterFiveActivity::class.java)
+            startActivity(intent)
+        }
+        binding.view2.setOnClickListener {
+            val intent = Intent(this, filter_six::class.java)
+            startActivity(intent)
+        }
+        binding.view3.setOnClickListener {
+            val intent = Intent(this, FilterSevenActivity::class.java)
+            startActivity(intent)
+        }
+        binding.view4.setOnClickListener {
+            val intent = Intent(this, FilterEightActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.view5.setOnClickListener {
+            val intent = Intent(this, filter_nine::class.java)
+            startActivity(intent)
+        }
+        binding.view7.setOnClickListener {
+            val intent = Intent(this, FiltertenActivity::class.java)
+            startActivity(intent)
+        }
+
+
+        Goggle = findViewById(R.id.checkBox)
          Amazon= findViewById(R.id.checkBox2)
         Filpkart= findViewById(R.id.checkBox3)
          Samsung= findViewById(R.id.checkBox4)

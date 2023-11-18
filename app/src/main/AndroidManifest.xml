@@ -58,6 +58,11 @@
         <activity
             android:name=".JobActivity"
             android:exported="true">
+
+
+
+
+
         </activity>
         <activity
             android:name=".SettingActivity"
@@ -115,9 +120,10 @@
     <activity android:name=".profilePage"
         android:exported="true">
 
-    </activity>
+        </activity>
 
-        <activity android:name=".ui_ux1"
+
+        <activity android:name=".MainActivity_param"
             android:exported="true">
 
         </activity>

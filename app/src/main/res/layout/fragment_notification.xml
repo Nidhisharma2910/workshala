@@ -20,7 +20,7 @@
             android:layout_alignParentTop="true"
             android:layout_marginTop="28dp"
             android:fontFamily="@font/poppins"
-            android:gravity="top"
+            android:gravity="left"
             android:paddingStart="@dimen/_8sdp"
             android:paddingEnd="@dimen/_8sdp"
             android:text="@string/experience_"

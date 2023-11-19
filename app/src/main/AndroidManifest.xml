@@ -70,10 +70,7 @@
         <activity android:name=".FilterSevenActivity"
             android:exported="true">
 
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+
         </activity>
 
         <activity android:name=".FilterFiveActivity"
@@ -94,6 +91,10 @@
 
         <activity android:name=".MainActivity_param"
             android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
 
         </activity>
 

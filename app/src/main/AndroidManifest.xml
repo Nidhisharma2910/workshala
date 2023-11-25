@@ -88,6 +88,8 @@
         <activity android:name=".FilterFiveActivity"
             android:exported="true">
 
+
+
         </activity>
         <activity android:name=".filter_six"
             android:exported="true">
@@ -97,10 +99,16 @@
         <activity android:name=".FilterSevenActivity"
             android:exported="true">
 
+
         </activity>
 
         <activity android:name=".FilterEightActivity"
             android:exported="true">
+
+
+        </activity>
+
+        <activity android:name=".profile"
 
         </activity>
 
@@ -131,8 +139,9 @@
         </activity>
 
         <activity android:name=".AndroidLargeActivity"
-            android:exported="true">
 
+            android:exported="true">
+           
         </activity>
 
 

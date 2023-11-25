@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:contentDescription="NULL">
+
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageView19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_21sdp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/vid_lady" />
+
+
+                <TextView
+                    android:id="@+id/textView34"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_57sdp"
+                    android:layout_marginTop="@dimen/_18sdp"
+                    android:fontFamily="@font/mulish"
+                    android:text="Hello..."
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13ssp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView35"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/mulish"
+                    android:text="Vidita Singh"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_17ssp"
+                    app:layout_constraintStart_toEndOf="@+id/imageView19"
+                    app:layout_constraintTop_toBottomOf="@+id/textView34" />
+
+                <ImageView
+                    android:id="@+id/notification_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_22sdp"
+                    android:layout_marginEnd="@dimen/_24sdp"
+                    android:background="@drawable/bg_circle"
+                    android:padding="11dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/icon_notification" />
+
+                <EditText
+                    android:id="@+id/editTextText"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:layout_marginEnd="@dimen/_24sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_22sdp"
+                    android:ems="10"
+                    android:hint="🔍 Search for a job or company"
+                    android:inputType="text"
+                    android:background="@drawable/search_bar_bg"
+                    android:padding="12dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/notification_icon" />
+
+                <ImageView
+                    android:id="@+id/imageView21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintStart_toStartOf="@+id/notification_icon"
+                    app:layout_constraintTop_toTopOf="@+id/editTextText"
+                    app:srcCompat="@drawable/filter_icon" />
+
+                <ImageView
+                    android:id="@+id/imageView23"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_140sdp"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:layout_marginEnd="@dimen/_24sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextText"
+                    app:srcCompat="@drawable/man_iamge_" />
+
+                <TextView
+                    android:id="@+id/textView36"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:fontFamily="@font/mulish"
+                    android:text="Recommended Courses"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13ssp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView23" />
+
+                <TextView
+                    android:id="@+id/textView37"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_24sdp"
+                    android:fontFamily="@font/mulish"
+                    android:text="See all"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/_13ssp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView23" />
+
+                <ViewFlipper
+                    android:id="@+id/master_img"
+                    android:layout_width="0dp"
+                    android:layout_height="180dp"
+                    android:foregroundGravity="center"
+                    android:layout_marginTop="@dimen/_290sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:flipInterval="2000"
+                    android:autoStart="true"
+                    android:inAnimation="@android:anim/slide_in_left"
+                    android:outAnimation="@android:anim/slide_out_right">
+
+
+                    <ImageView
+                        android:id="@+id/imageView22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/master_image_param" />
+
+                    <ImageView
+                        android:id="@+id/master1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/sales_marketing" />
+
+                    <ImageView
+                        android:id="@+id/master2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/android_large_1_img" />
+
+                    <ImageView
+                        android:id="@+id/master3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/master_image_param" />
+
+                    <ImageView
+                        android:id="@+id/master4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/master_image_param" />
+
+
+                </ViewFlipper>
+
+                <TextView
+                    android:id="@+id/textView41"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:fontFamily="@font/mulish"
+                    android:text="Recent Jobs"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13ssp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/master_img" />
+
+                <TextView
+                    android:id="@+id/textView38"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:layout_marginEnd="@dimen/_24sdp"
+                    android:text="See all"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/_13ssp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/mulish"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/master_img" />
+
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_22sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/_bg_homepage_param"
+                    android:fontFamily="@font/mulish"
+                    android:padding="6dp"
+                    android:paddingStart="26dp"
+                    android:paddingEnd="26dp"
+                    android:text="All"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_13ssp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView41" />
+
+                <TextView
+                    android:id="@+id/textView39"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_24sdp"
+                    android:layout_marginTop="@dimen/_40sdp"
+                    android:background="@drawable/_bg_tech_param"
+                    android:fontFamily="@font/mulish"
+                    android:padding="6dp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:text="Design"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13ssp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/textView23"
+                    app:layout_constraintTop_toBottomOf="@+id/master_img" />
+
+                <TextView
+                    android:id="@+id/textView40"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_24sdp"
+                    android:layout_marginTop="@dimen/_11sdp"
+                    android:background="@drawable/_bg_tech_param"
+                    android:fontFamily="@font/mulish"
+                    android:padding="6dp"
+                    android:paddingStart="24dp"
+                    android:paddingEnd="24dp"
+                    android:text="Technology"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13ssp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/textView39"
+                    app:layout_constraintTop_toBottomOf="@+id/textView38" />
+
+                <ImageView
+                    android:id="@+id/and1"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_140sdp"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:src="@drawable/android_large_1_img"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/textView23">
+
+                </ImageView>
+
+
+                <ImageView
+                    android:id="@+id/and2"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_140sdp"
+                    android:layout_marginTop="@dimen/_24sdp"
+                    android:src="@drawable/sales_marketing"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/and1" >
+
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/and3"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_140sdp"
+                    android:src="@drawable/sales_marketing"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/and2"
+                    android:layout_marginTop="@dimen/_24sdp">
+
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/and4"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_140sdp"
+                    android:src="@drawable/sales_marketing"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/and3"
+                    android:layout_marginTop="@dimen/_24sdp">
+
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/and5"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_140sdp"
+                    android:src="@drawable/sales_marketing"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/and4"
+                    android:layout_marginTop="@dimen/_24sdp">
+
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/and6"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_140sdp"
+                    android:src="@drawable/sales_marketing"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/and5"
+                    android:layout_marginTop="@dimen/_24sdp">
+
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/and7"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_140sdp"
+                    android:src="@drawable/sales_marketing"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/and6"
+                    android:layout_marginTop="@dimen/_24sdp">
+
+                </ImageView>
+
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+    </FrameLayout>
+
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav"
+        android:background="@color/purple"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        app:itemIconSize="@dimen/_24sdp"
+        app:itemActiveIndicatorStyle="@style/App.Custom.Indicator"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

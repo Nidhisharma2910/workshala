@@ -1,45 +1,44 @@
 package com.example.workshala2
 
-// Base URL: workshala-api.onrender.com/
-import Models.LoginResponse
-import android.app.ProgressDialog
+
+import Models.LoginReq
+import Models.LoginRes
 import android.content.Intent
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
 import android.util.Log
 import android.util.Patterns
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import api.RetrofitClient
 import com.example.workshala2.databinding.ActivitySigninBinding
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
-import retrofit2.Retrofit
-
-
 
 class SignInActivity : AppCompatActivity() {
     private lateinit var binding: ActivitySigninBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivitySigninBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+
+
         binding.forgot.setOnClickListener {
             val intent = Intent(this, ForgotActivity::class.java)
             startActivity(intent)
-
         }
-
         val button2 = binding.button2
         val editTextEmail = binding.textInputEmail
         val editTextPassword = binding.password
 
-
-
         button2.setOnClickListener {
+
+            val intent = Intent(this, MainActivity_param::class.java)
+            startActivity(intent)
+            
             val email = editTextEmail.text.toString().trim()
             val password = editTextPassword.text.toString().trim()
 
@@ -54,85 +53,27 @@ class SignInActivity : AppCompatActivity() {
                 return@setOnClickListener
             }
 
-            RetrofitClient.retrofit.userLogin(email, password)
-                .enqueue(object : Callback<LoginResponse> {
-                    override fun onFailure(call: Call<LoginResponse>, t: Throwable) {
-                        Log.e("LoginActivity", "Login request failed", t)
-                        Toast.makeText(applicationContext, t.message, Toast.LENGTH_LONG).show()
-                    }
-
-                    override fun onResponse(
-                        call: Call<LoginResponse>,
-                        response: Response<LoginResponse>
-                    ) {
-                        if (!response.isSuccessful) {
-                            Log.e(
-                                "LoginActivity",
-                                "Login request unsuccessful. HTTP code: ${response.code()}"
-                            )
-                            Toast.makeText(
-                                applicationContext,
-                                "Login request unsuccessful",
-                                Toast.LENGTH_LONG
-                            ).show()
-                            return
+            try {
+                RetrofitClient.retrofit.userLogin(LoginReq(email, password))
+                    .enqueue(object : Callback<LoginRes> {
+                        override fun onResponse(
+                            call: Call<LoginRes>,
+                            response: Response<LoginRes>
+                        ) {
+                            Log.d("nidhi", response.code().toString())
+                            Log.d("nidhi", response.body().toString())
                         }
 
-                        val loginResponse = response.body()
-
-                        if (loginResponse?.error == false) {
-                            Log.d("LoginActivity", "Login successful. User: ${loginResponse.user}")
-
-
-
-                        } else {
-                            Log.w(
-                                "LoginActivity",
-                                "Login request successful, but server returned an error. Message: ${loginResponse?.message}"
-                            )
-                            Toast.makeText(
-                                applicationContext,
-                                loginResponse?.message,
-                                Toast.LENGTH_LONG
-                            ).show()
+                        override fun onFailure(call: Call<LoginRes>, t: Throwable) {
+                            Log.d("nidhi", "failure")
                         }
-                    }
-                })
+                    })
+            } catch (e: Exception) {
+                Log.e("nidhi", "Something is wrong")
+            }
         }
 
-//            RetrofitClient.instance.userLogin(email, password)
-//
-//                .enqueue(object: Callback<LoginResponse>{
-//                    override fun onFailure(call: Call<LoginResponse>, t: Throwable) {
-//                        Log.e("LoginActivity", "Login request failed", t)
-//                        Toast.makeText(applicationContext, t.message, Toast.LENGTH_LONG).show()
-//                    }
-//
-//
-//
-//                    override fun onResponse(
-//                        call: Call<LoginResponse>,
-//                        response: Response<LoginResponse>
-//                    ) {
-//                        if(!response.body()?.error!!){
-//
-//                            SharedPrefManager.getInstance(applicationContext).saveUser(response.body()?.user!!)
-//
-//                            val intent = Intent(applicationContext, JobActivity::class.java)
-//                            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
-//
-//                            startActivity(intent)
-//
-//
-//                        }else{
-//                            Toast.makeText(applicationContext, response.body()?.message, Toast.LENGTH_LONG).show()
-//                        }
-//                    }
-//                    })
-//
-//
-//                }
-            binding.textInputEmail.addTextChangedListener(object : TextWatcher {
+        binding.textInputEmail.addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
             }
 
@@ -144,11 +85,12 @@ class SignInActivity : AppCompatActivity() {
                     binding.textInputEmail.error = "Invalid Email"
                 }
             }
+
             override fun afterTextChanged(s: Editable?) {
             }
         })
+
+
+
     }
-
-
-
 }

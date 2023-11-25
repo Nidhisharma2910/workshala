@@ -1,12 +1,20 @@
 package api
 
 
-import Models.LoginResponse
+import Models.LoginReq
+import Models.LoginReq1
+import Models.LoginRes
+import Models.LoginRes1
 import retrofit2.Call
+import retrofit2.http.Body
 import retrofit2.http.POST
-import retrofit2.http.Query
 
 interface Api {
     @POST("auth/login/")
-    fun userLogin(@Query("email") email: String, @Query("password") password: String): Call<LoginResponse>
+    fun userLogin(@Body loginReq: LoginReq): Call<LoginRes>
+
+    @POST("auth/register/")
+    fun userLogin1(@Body loginReq1: LoginReq1): Call<LoginRes1>
+
+
 }

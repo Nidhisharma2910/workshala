@@ -1,7 +1,5 @@
 package api
 
-
-import android.util.Base64
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 

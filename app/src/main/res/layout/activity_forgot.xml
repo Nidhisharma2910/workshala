@@ -73,6 +73,7 @@
                     android:background="#eeeeee"
                     android:paddingStart="@dimen/_16sdp"
                     android:hint="Email ID"
+                    android:paddingEnd="@dimen/_14sdp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />

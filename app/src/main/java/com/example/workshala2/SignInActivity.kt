@@ -78,9 +78,17 @@ class SignInActivity : AppCompatActivity() {
             }
 
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                if (Patterns.EMAIL_ADDRESS.matcher(binding.textInputEmail.text.toString()).matches())
-                    binding.button2.isEnabled = true
-                else {
+                val email = binding.textInputEmail.text.toString().trim()
+
+                if (android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
+                    if (email.endsWith("@con")) {
+                        binding.button2.isEnabled = false
+                        binding.textInputEmail.error = "Invalid Email"
+                    } else {
+                        binding.button2.isEnabled = true
+                        binding.textInputEmail.error = null
+                    }
+                } else {
                     binding.button2.isEnabled = false
                     binding.textInputEmail.error = "Invalid Email"
                 }
@@ -89,6 +97,8 @@ class SignInActivity : AppCompatActivity() {
             override fun afterTextChanged(s: Editable?) {
             }
         })
+
+
 
 
 

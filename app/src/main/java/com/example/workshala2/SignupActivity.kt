@@ -86,12 +86,12 @@ class SignupActivity : AppCompatActivity() {
                             call: Call<LoginRes1>,
                             response: Response<LoginRes1>
                         ) {
-                           Log.d("nidhi", response.code().toString())
+                            Log.d("nidhi", response.code().toString())
                             Log.d("nidhi", response.body().toString())
                         }
 
                         override fun onFailure(call: Call<LoginRes1>, t: Throwable) {
-                           Log.d("nidhi", "failed")
+                            Log.d("nidhi", "failed")
                         }
                     })
             } catch (e:Exception){
@@ -140,8 +140,3 @@ class SignupActivity : AppCompatActivity() {
 
 
 }
-
-
-
-
-

@@ -52,13 +52,13 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/textView35"
+                    android:id="@+id/text35"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:fontFamily="@font/mulish"
-                    android:text="Vidita Singh"
                     android:textStyle="bold"
+                    android:text="vidita singh"
                     android:textColor="@color/black"
                     android:textSize="@dimen/_17ssp"
                     app:layout_constraintStart_toEndOf="@+id/imageView19"

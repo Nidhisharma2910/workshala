@@ -18,22 +18,19 @@
             android:layout_marginTop="48dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/profile_logo" />
+            app:srcCompat="@drawable/pr" />
 
         <TextView
             android:id="@+id/textView13"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginStart="40dp"
-            android:layout_marginTop="52dp"
-            android:layout_marginEnd="20dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/_48sdp"
             android:text="Vidita Singh"
             android:textColor="@color/purple"
-            android:textSize="30sp"
+            android:textSize="@dimen/_24ssp"
             android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/imageView8"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -41,8 +38,8 @@
             android:id="@+id/textView16"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="40dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="14dp"
             android:text="India"
             android:textSize="25dp"
             android:textStyle="bold"
@@ -55,13 +52,11 @@
             android:id="@+id/textView17"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="40dp"
-            android:layout_marginTop="12dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="14dp"
             android:text="Since 2022"
             android:textSize="20dp"
             android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/imageView8"
             app:layout_constraintTop_toBottomOf="@+id/textView16" />
 
@@ -70,7 +65,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
-            android:layout_marginTop="92dp"
+            android:layout_marginTop="48dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/view8"
             app:srcCompat="@drawable/img_4" />
@@ -107,10 +102,10 @@
 
         <View
             android:id="@+id/view8"
-            android:layout_width="@dimen/_110sdp"
-            android:layout_height="@dimen/_80sdp"
-            android:layout_marginStart="@dimen/_44sdp"
-            android:layout_marginTop="@dimen/_68sdp"
+            android:layout_width="187dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="50dp"
             android:background="@drawable/viewbackground"
             app:layout_constraintEnd_toStartOf="@+id/view9"
             app:layout_constraintStart_toStartOf="parent"
@@ -118,13 +113,12 @@
 
         <View
             android:id="@+id/view9"
-            android:layout_width="@dimen/_110sdp"
-            android:layout_height="@dimen/_80sdp"
-            android:layout_marginTop="@dimen/_68sdp"
-            android:layout_marginEnd="@dimen/_80sdp"
+            android:layout_width="187dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="@dimen/_20sdp"
             android:background="@drawable/viewbackground"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toEndOf="@+id/view8"
             app:layout_constraintTop_toBottomOf="@+id/imageView8" />
 
@@ -178,8 +172,8 @@
             android:id="@+id/textView22"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="36dp"
-            android:layout_marginTop="92dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="50dp"
             android:text="@string/fav"
             android:textSize="@dimen/_15ssp"
             app:layout_constraintStart_toEndOf="@+id/imageView9"
@@ -196,18 +190,18 @@
         app:layout_constraintStart_toEndOf="@+id/imageView10"
         app:layout_constraintTop_toBottomOf="@+id/textView22" />
 
-    <TextView
-        android:id="@+id/textView24"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="28dp"
-        android:text="@string/friends"
-        android:textSize="@dimen/_15ssp"
-        app:layout_constraintStart_toEndOf="@+id/imageView13"
-        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/friends"
+            android:textSize="@dimen/_15ssp"
+            app:layout_constraintStart_toEndOf="@+id/imageView13"
+            app:layout_constraintTop_toBottomOf="@+id/textView23" />
 
-    <TextView
+        <TextView
         android:id="@+id/textView25"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

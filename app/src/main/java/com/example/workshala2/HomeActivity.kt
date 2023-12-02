@@ -18,6 +18,7 @@ import java.io.IOException
 
 class HomeActivity : AppCompatActivity() {
 
+
     private lateinit var textView34: TextView
     private lateinit var bottomNavigationView: BottomNavigationView
 

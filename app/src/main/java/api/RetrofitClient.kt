@@ -14,3 +14,12 @@ object RetrofitClient {
         .create(Api::class.java)
 
 }
+
+object ApiClient {
+    private const val BASE_URL = "https://ml-student-api-base-url.com/"
+
+    val retrofit = Retrofit.Builder()
+        .baseUrl(BASE_URL)
+        .addConverterFactory(GsonConverterFactory.create())
+        .build()
+}

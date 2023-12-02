@@ -1,6 +1,7 @@
 package com.example.workshala2
 
 import Models.ProfileRes
+import Models.RecommendedCourse
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
@@ -9,6 +10,9 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import api.Api
+import api.ApiClient
+import api.RecommendedCourseApiService
 import api.RetrofitClient
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import retrofit2.Call
@@ -26,7 +30,31 @@ class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_homepage)
+        val apiService = ApiClient.retrofit.create(RecommendedCourseApiService::class.java)
+
+        val call: Call<List<RecommendedCourse>> = apiService.getRecommendedCourses()
+
+        call.enqueue(object : Callback<List<RecommendedCourse>> {
+            override fun onResponse(
+                call: Call<List<RecommendedCourse>>,
+                response: Response<List<RecommendedCourse>>
+            ) {
+                if (response.isSuccessful) {
+                    val recommendedCourses: List<RecommendedCourse>? = response.body()
+                    // Process recommendedCourses here
+
+                } else {
+                    // Handle error
+                }
+            }
+
+            override fun onFailure(call: Call<List<RecommendedCourse>>, t: Throwable) {
+                // Handle failure
+            }
+        })
+
         bottomNavigationView = findViewById(R.id.bottomNavigationView2)
+
 
         bottomNavigationView.setOnNavigationItemSelectedListener { menuItem ->
             val handled = when (menuItem.itemId) {
@@ -102,6 +130,8 @@ class HomeActivity : AppCompatActivity() {
             startActivity(intent)
         }
     }
+
+
 
     private fun  replaceFragment(fragment: Fragment){
         supportFragmentManager.beginTransaction().replace(R.id.frame_container, fragment).commit()

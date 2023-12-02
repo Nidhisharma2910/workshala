@@ -6,6 +6,7 @@ import Models.LoginReq1
 import Models.LoginRes
 import Models.LoginRes1
 import Models.ProfileRes
+import Models.RecommendedCourse
 import retrofit2.Call
 import retrofit2.http.Body
 import retrofit2.http.GET
@@ -20,4 +21,10 @@ interface Api {
 
     @GET("auth/profiles/")
     fun getProfile(): Call<ProfileRes>
+
+}
+
+interface RecommendedCourseApiService {
+    @GET("recommended-courses")
+    fun getRecommendedCourses(): Call<List<RecommendedCourse>>
 }

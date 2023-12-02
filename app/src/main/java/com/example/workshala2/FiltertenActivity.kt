@@ -5,13 +5,14 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.CheckBox
 import androidx.appcompat.app.AppCompatActivity
+import com.example.workshala2.databinding.ActivityFiltertenBinding
 import com.example.workshala2.databinding.ActivityFiltertwoBinding
 
 class FiltertenActivity: AppCompatActivity() {
-    private lateinit var binding: ActivityFiltertwoBinding
+    private lateinit var binding: ActivityFiltertenBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityFiltertwoBinding.inflate(layoutInflater)
+        binding = ActivityFiltertenBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         binding.view7.setOnClickListener {

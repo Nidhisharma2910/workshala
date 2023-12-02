@@ -13,7 +13,7 @@ class mainActivitySwarnima : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_swarnima)
 
-    Handler(Looper.getMainLooper()).postDelayed(5000)
+    Handler(Looper.getMainLooper()).postDelayed(3000)
     {
         val intent = Intent(this, MainActivity::class.java)
         startActivity(intent)

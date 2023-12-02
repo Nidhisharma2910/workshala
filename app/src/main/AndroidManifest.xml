@@ -21,12 +21,12 @@
         <activity android:name=".mainActivitySwarnima"
             android:exported="true">
 
-
         </activity>
 
         <activity
             android:name=".MainActivity"
             android:exported="true">
+
 
         </activity>
         <activity
@@ -53,9 +53,23 @@
             </intent-filter>
         </activity>
 
-         <activity
+
+       
+        <activity
+            android:name=".profile"
+            android:exported="true">
+
+
+        </activity>
+
+        <activity
             android:name=".HomeActivity"
             android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+
         </activity>
 
         <activity
@@ -88,7 +102,6 @@
 
         <activity android:name=".FilterFiveActivity"
             android:exported="true">
-
         </activity>
         <activity android:name=".filter_six"
             android:exported="true">
@@ -98,48 +111,25 @@
         <activity android:name=".FilterSevenActivity"
             android:exported="true">
 
+
+
         </activity>
 
         <activity android:name=".FilterEightActivity"
             android:exported="true">
 
-        </activity>
-
-        <activity android:name=".filter_nine"
-            android:exported="true">
-
 
         </activity>
 
-        <activity android:name=".FiltertenActivity"
+        <activity android:name=".ui_ux2"
             android:exported="true">
 
         </activity>
 
-    <activity android:name=".profile"
-        android:exported="true">
 
-
-        </activity>
-
-        <activity android:name=".ui_ux1"
-            android:exported="true">
-
-        </activity>
-
-        <activity android:name=".AndroidLargeActivity"
-            android:exported="true">
-
-        </activity>
-
-        <activity android:name=".JobbActivity"
-            android:exported="true">
-
-        </activity>
 
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
-    </application>
+    </manifest>
 
-</manifest>

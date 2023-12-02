@@ -6,13 +6,13 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     android:fillViewport="true"
-    tools:context=".FilterTwoActivity"
+    tools:context=".FilterSevenActivity"
     android:padding="@dimen/_3sdp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".FilterTwoActivity">
+        tools:context=".FilterSevenActivity">
 
         <ImageView
             android:id="@+id/imageView17"

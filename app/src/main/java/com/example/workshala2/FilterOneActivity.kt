@@ -2,6 +2,7 @@ package com.example.workshala2
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.workshala2.databinding.ActivityFillteroneBinding
 
@@ -22,6 +23,8 @@ class FilterOneActivity : AppCompatActivity() {
             val intent = Intent(this, FilterTwoActivity::class.java)
             startActivity(intent)
         }
+
+
 
         binding.imageView18.setOnClickListener {
             val intent = Intent(this, filter_three::class.java)
@@ -58,6 +61,7 @@ class FilterOneActivity : AppCompatActivity() {
             val intent = Intent(this, FiltertenActivity::class.java)
             startActivity(intent)
         }
+
 
 
     }

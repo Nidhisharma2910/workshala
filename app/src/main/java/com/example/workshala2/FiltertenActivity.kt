@@ -2,16 +2,16 @@ package com.example.workshala2
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
+import android.widget.CheckBox
 import androidx.appcompat.app.AppCompatActivity
-import com.example.workshala2.databinding.ActivityFilterfourBinding
+import com.example.workshala2.databinding.ActivityFiltertwoBinding
 
-
-class FilterFourActivity : AppCompatActivity() {
-
-    private lateinit var binding: ActivityFilterfourBinding
+class FiltertenActivity: AppCompatActivity() {
+    private lateinit var binding: ActivityFiltertwoBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityFilterfourBinding.inflate(layoutInflater)
+        binding = ActivityFiltertwoBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         binding.view7.setOnClickListener {
@@ -59,6 +59,7 @@ class FilterFourActivity : AppCompatActivity() {
             val intent = Intent(this, FiltertenActivity::class.java)
             startActivity(intent)
         }
+
 
     }
 }

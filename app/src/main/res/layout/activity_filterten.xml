@@ -6,20 +6,20 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     android:fillViewport="true"
-    tools:context=".FilterFiveActivity"
+    tools:context=".FilterTwoActivity"
     android:padding="@dimen/_3sdp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".FilterFiveActivity">
+        tools:context=".FilterTwoActivity">
 
         <ImageView
             android:id="@+id/imageView17"
-            android:layout_width="@dimen/_20sdp"
-            android:layout_height="@dimen/_20sdp"
+            android:layout_width="@dimen/_16sdp"
+            android:layout_height="@dimen/_16sdp"
             android:layout_marginStart="@dimen/_24sdp"
-            android:layout_marginTop="@dimen/_24sdp"
+            android:layout_marginTop="@dimen/_28sdp"
             android:src="@drawable/cross"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -29,12 +29,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="24dp"
             android:fontFamily="@font/mulish"
             android:text="Filter"
             android:textColor="@color/black"
+            android:textSize="@dimen/_24sdp"
             android:textStyle="bold"
-            android:textSize="@dimen/_28sdp"
             app:layout_constraintStart_toEndOf="@+id/imageView17"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -51,6 +51,7 @@
             android:textColor="#246BFD"
             android:textSize="@dimen/_16ssp"
             app:layout_constraintBottom_toBottomOf="@+id/textView28"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/textView28"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -62,7 +63,6 @@
             android:layout_alignParentTop="true"
             android:layout_marginTop="24dp"
             android:background="#FAF6FF"
-            android:textColor="#946CC3"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView28" />
 
@@ -102,7 +102,7 @@
             android:fontFamily="@font/inter"
             android:gravity="center_horizontal|top"
             android:text="Gender"
-            android:textColor="@color/black"
+          android:textColor="@color/black"
             android:textSize="@dimen/_16ssp"
             app:layout_constraintEnd_toEndOf="@+id/imageView1"
             app:layout_constraintHorizontal_bias="0.607"
@@ -142,7 +142,7 @@
             android:layout_height="60dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:background="#FFFFFF"
+            android:background="#FAF6FF"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
@@ -153,7 +153,7 @@
             android:layout_marginTop="4dp"
             android:fontFamily="@font/inter"
             android:text="Working Hours"
-            android:background="#FAF6FF"
+            android:textColor="@color/black"
             android:textSize="@dimen/_16ssp"
             app:layout_constraintEnd_toEndOf="@+id/view"
             app:layout_constraintHorizontal_bias="1.0"
@@ -271,7 +271,7 @@
             android:layout_height="60dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:background="@color/white"
+            android:background="#FAF6FF"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/view5" />
 
@@ -285,7 +285,7 @@
             android:fontFamily="@font/inter"
             android:gravity="center_horizontal|top"
             android:text="Skills"
-            android:textColor="#946CC3"
+            android:textColor="@color/black"
             android:textSize="@dimen/_16ssp"
             app:layout_constraintEnd_toEndOf="@+id/view6"
             app:layout_constraintHorizontal_bias="0.392"
@@ -298,7 +298,7 @@
             android:layout_height="60dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:background="#FAF6FF"
+            android:backgroundTint="@color/white"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/view6" />
 
@@ -311,7 +311,8 @@
             android:fontFamily="@font/inter"
             android:gravity="center_horizontal|top"
             android:text="Experience"
-            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            android:textColor="#946CC3"
             android:textSize="@dimen/_16ssp"
             app:layout_constraintEnd_toEndOf="@+id/view7"
             app:layout_constraintHorizontal_bias="1.0"
@@ -353,9 +354,9 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="34dp"
             android:layout_marginTop="28dp"
-            android:layout_marginEnd="77dp"
+            android:layout_marginEnd="119dp"
             android:fontFamily="@font/inter"
-            android:text="Andhra Pradesh"
+            android:text="Freshers"
             android:textColor="#8F8F8F"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imageView18"
@@ -365,13 +366,14 @@
             android:id="@+id/checkBox2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="34dp"
+            android:layout_marginStart="36dp"
             android:layout_marginTop="12dp"
-            android:layout_marginEnd="57dp"
+            android:layout_marginEnd="104dp"
             android:fontFamily="@font/inter"
-            android:text="Arunachal Pradesh"
+            android:text="1-2 year"
             android:textColor="#8F8F8F"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/imageView1"
             app:layout_constraintTop_toBottomOf="@+id/checkBox" />
 
@@ -379,13 +381,14 @@
             android:id="@+id/checkBox3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="34dp"
-            android:layout_marginTop="12dp"
-            android:layout_marginEnd="142dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="141dp"
             android:fontFamily="@font/inter"
-            android:text="Assam"
+            android:text="2-3 year"
             android:textColor="#8F8F8F"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.363"
             app:layout_constraintStart_toEndOf="@+id/imageView2"
             app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
 
@@ -393,21 +396,22 @@
             android:id="@+id/checkBox4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="34dp"
+            android:layout_marginStart="39dp"
             android:layout_marginTop="12dp"
-            android:layout_marginEnd="152dp"
+            android:layout_marginEnd="121dp"
             android:fontFamily="@font/inter"
-            android:text="Bihar"
+            android:text="3-4 year"
             android:textColor="#8F8F8F"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/view"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView2"
             app:layout_constraintTop_toBottomOf="@+id/checkBox3" />
 
         <Button
             android:layout_width="125dp"
             android:layout_height="59dp"
             android:layout_marginStart="56dp"
-            android:layout_marginTop="389dp"
+            android:layout_marginTop="380dp"
             android:layout_marginEnd="39dp"
             android:backgroundTint="@color/purple"
             android:text="Apply"

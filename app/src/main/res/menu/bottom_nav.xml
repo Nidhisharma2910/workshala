@@ -9,6 +9,7 @@
         android:id="@+id/courses"
         android:icon="@drawable/icon_course"
         />
+
     <item android:title="Jobs"
         android:id="@+id/job"
         android:icon="@drawable/icon_job"/>

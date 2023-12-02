@@ -169,12 +169,14 @@
 
 
                 <EditText
+                    android:id="@+id/mob"
                     android:layout_width="@dimen/_310sdp"
                     android:layout_height="@dimen/_40sdp"
                     android:background="#eeeeee"
                     android:hint="Mobile"
                     android:paddingStart="@dimen/_16sdp"
                     android:inputType="phone"
+                    android:maxLength="10"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />

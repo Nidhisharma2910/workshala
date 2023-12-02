@@ -35,6 +35,10 @@ class SignInActivity : AppCompatActivity() {
         val editTextPassword = binding.password
 
         button2.setOnClickListener {
+
+            val intent = Intent(this, MainActivity_param::class.java)
+            startActivity(intent)
+            
             val email = editTextEmail.text.toString().trim()
             val password = editTextPassword.text.toString().trim()
 

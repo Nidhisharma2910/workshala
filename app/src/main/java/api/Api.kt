@@ -13,6 +13,8 @@ interface Api {
     @POST("auth/login/")
     fun userLogin(@Body loginReq: LoginReq): Call<LoginRes>
 
-    @POST("auth/register")
-    fun userLogin1(@Body loginReq: LoginReq1): Call<LoginRes1>
+    @POST("auth/register/")
+    fun userLogin1(@Body loginReq1: LoginReq1): Call<LoginRes1>
+
+
 }

@@ -21,6 +21,7 @@
         <activity android:name=".mainActivitySwarnima"
             android:exported="true">
 
+
         </activity>
 
         <activity
@@ -43,6 +44,21 @@
         </activity>
 
         <activity
+            android:name=".MainActivity_param"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+         <activity
+            android:name=".HomeActivity"
+            android:exported="true">
+        </activity>
+
+        <activity
             android:name=".JobActivity"
             android:exported="true">
 
@@ -55,7 +71,6 @@
 
         <activity android:name=".FilterOneActivity"
             android:exported="true">
-
         </activity>
 
         <activity android:name=".FilterTwoActivity"
@@ -63,13 +78,24 @@
 
         </activity>
 
-        <activity android:name=".FilterSevenActivity"
+        <activity android:name=".filter_three"
             android:exported="true">
-
+        </activity>
+        <activity android:name=".FilterFourActivity"
+            android:exported="true">
 
         </activity>
 
         <activity android:name=".FilterFiveActivity"
+            android:exported="true">
+
+        </activity>
+        <activity android:name=".filter_six"
+            android:exported="true">
+
+        </activity>
+
+        <activity android:name=".FilterSevenActivity"
             android:exported="true">
 
         </activity>
@@ -79,34 +105,30 @@
 
         </activity>
 
-        <activity android:name=".FilterFourActivity"
+        <activity android:name=".filter_nine"
             android:exported="true">
-
-        </activity>
-
-
-        <activity android:name=".MainActivity_param"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-
-
-            </intent-filter>
-
-        </activity>
-
-        <activity android:name="HomeActivity"
-            android:exported="true">
-
 
 
         </activity>
 
+        <activity android:name=".FiltertenActivity"
+            android:exported="true">
+
+        </activity>
+
+    <activity android:name=".profile"
+        android:exported="true">
+
+
+        </activity>
+
+        <activity android:name=".ui_ux1"
+            android:exported="true">
+
+        </activity>
 
         <activity android:name=".AndroidLargeActivity"
             android:exported="true">
-
 
         </activity>
 
@@ -114,6 +136,7 @@
             android:exported="true">
 
         </activity>
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

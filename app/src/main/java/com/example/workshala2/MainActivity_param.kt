@@ -66,5 +66,3 @@ class MainActivity_param : AppCompatActivity() {
         TODO("Not yet implemented")
     }
 }
-
-

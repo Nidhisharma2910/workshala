@@ -2,6 +2,7 @@ package com.example.workshala2
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.workshala2.databinding.ActivityFilterfourBinding
 
@@ -13,6 +14,12 @@ class FilterFourActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityFilterfourBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        val back = findViewById<ImageView>(R.id.imageView17)
+        back.setOnClickListener {
+            val intent = Intent(this, HomeActivity::class.java)
+            startActivity(intent)
+        }
 
         binding.view7.setOnClickListener {
             val intent = Intent(this, FilterOneActivity::class.java)

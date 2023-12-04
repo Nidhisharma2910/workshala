@@ -6,11 +6,11 @@ import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import api.Api
 import api.ApiClient
 import api.RecommendedCourseApiService
 import api.RetrofitClient
@@ -18,7 +18,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
-import java.io.IOException
+import retrofit2.http.Path
 
 class HomeActivity : AppCompatActivity() {
 
@@ -26,10 +26,12 @@ class HomeActivity : AppCompatActivity() {
     private lateinit var textView34: TextView
     private lateinit var bottomNavigationView: BottomNavigationView
 
-    @SuppressLint("MissingInflatedId")
+    @SuppressLint("MissingInflatedId", "WrongViewCast")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_homepage)
+
+
         val apiService = ApiClient.retrofit.create(RecommendedCourseApiService::class.java)
 
         val call: Call<List<RecommendedCourse>> = apiService.getRecommendedCourses()
@@ -84,35 +86,35 @@ class HomeActivity : AppCompatActivity() {
         textView34 = findViewById(R.id.text35) // Initialize your TextView here
 
         try {
-            RetrofitClient.retrofit.getProfile()
-                .enqueue(object : Callback<ProfileRes> {
-                    override fun onResponse(call: Call<ProfileRes>, response: Response<ProfileRes>) {
-                        if (response.isSuccessful) {
-                            val profile: ProfileRes? = response.body()
-                            if (profile != null) {
-                                // Update your TextViews with the data from the API response
-                                textView34.text = "Hello, ${profile?.fullname}"
-                                // You can similarly update other TextViews based on your API response
-                            }
-                        } else {
-                            Log.d("nidhi", response.code().toString())
-                            Log.d("nidhi", response.body().toString())
-                            // Handle error
-                            // You can check response.code(), response.errorBody(), etc. for more details
-                        }
-                    }
+            val loguser = intent.getStringExtra("loggeduser")
+            if (loguser != null) {
+                RetrofitClient.retrofit.getProfile(loguser)
+                    .enqueue(object : Callback<ProfileRes> {
+                        override fun onResponse(call: Call<ProfileRes>, response: Response<ProfileRes>) {
+                            if (response.isSuccessful) {
+                                val profile: ProfileRes? = response.body()
+                                if (profile != null) {
 
-                    override fun onFailure(call: Call<ProfileRes>, t: Throwable) {
-                        // Handle failure
-                        if (t is IOException) {
-                            // Handle network-related errors
-                            Log.d("nidhi", "network error")
-                        } else {
-                            // Handle other errors
-                            Log.d("nidhi", "failure",t)
+                                    // Update your TextViews with the data from the API response
+                                    textView34.text = "Hello, ${profile?.fullname}"
+                                    // You can similarly update other TextViews based on your API response
+                                }
+                            } else {
+                                Log.d("nidhi", response.code().toString())
+                                Log.d("nidhi", response.body().toString())
+                                // Handle error
+                                // You can check response.code(), response.errorBody(), etc. for more details
+                            }
                         }
-                    }
-                })
+
+
+                        override fun onFailure(call: Call<ProfileRes>, t: Throwable) {
+                            TODO("Not yet implemented")
+                        }
+
+
+                    })
+            }
         } catch (e: Exception) {
             // Handle other exceptions
             Log.e("nidhi", "Something is wrong")
@@ -123,6 +125,14 @@ class HomeActivity : AppCompatActivity() {
             val intent = Intent(this, JobActivity::class.java)
             startActivity(intent)
         }
+
+        val filter = findViewById<ImageView>(R.id.imageView21)
+        filter.setOnClickListener {
+            val intent = Intent(this, FilterTwoActivity::class.java)
+            startActivity(intent)
+        }
+
+
 
         val aboutDoc = findViewById<TextView>(R.id.textView38)
         aboutDoc.setOnClickListener {

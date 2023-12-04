@@ -19,11 +19,12 @@ class MainActivity_param : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_param)
 
-
         val aboutDoc = findViewById<TextView>(R.id.next_button)
         aboutDoc.setOnClickListener {
             val intent = Intent(this, HomeActivity::class.java)
             startActivity(intent)
+
+            intent.putExtra("loggeduser",intent.getStringExtra("loggeduser"))
 
             movieList = ArrayList()
 

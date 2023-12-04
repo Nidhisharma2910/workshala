@@ -80,7 +80,7 @@ class SignupActivity : AppCompatActivity() {
             }
 
             try {
-                RetrofitClient.retrofit.userLogin1(LoginReq1(email, username, password),)
+                RetrofitClient.retrofit.userLogin1(LoginReq1(email, username, password))
                     .enqueue(object :Callback<LoginRes1>{
                         override fun onResponse(
                             call: Call<LoginRes1>,

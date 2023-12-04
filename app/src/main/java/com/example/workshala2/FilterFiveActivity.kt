@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.CheckBox
+import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.workshala2.databinding.ActivityFilterfiveBinding
 
@@ -20,6 +21,12 @@ class FilterFiveActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityFilterfiveBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        val back = findViewById<ImageView>(R.id.imageView17)
+        back.setOnClickListener {
+            val intent = Intent(this, HomeActivity::class.java)
+            startActivity(intent)
+        }
 
 
         binding.view7.setOnClickListener {

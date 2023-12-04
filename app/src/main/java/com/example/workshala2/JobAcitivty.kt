@@ -26,6 +26,13 @@ class JobActivity : AppCompatActivity() {
             val intent = Intent(this, ui_ux1::class.java)
             startActivity(intent)
         }
+
+        val back = findViewById<ImageView>(R.id.imageView5)
+        back.setOnClickListener {
+            val intent = Intent(this, HomeActivity::class.java)
+            startActivity(intent)
+        }
+
         tabLayout = findViewById<TabLayout>(R.id.tab_layout)
         viewPager2 = findViewById<ViewPager2>(R.id.view_pager)
         myViewPagerAdapter = MyViewPagerAdapter(this)

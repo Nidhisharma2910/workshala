@@ -53,6 +53,8 @@ class SignInActivity : AppCompatActivity() {
                 return@setOnClickListener
             }
 
+            var logeduser = ""
+
             try {
                 RetrofitClient.retrofit.userLogin(LoginReq(email, password))
                     .enqueue(object : Callback<LoginRes> {
@@ -62,16 +64,22 @@ class SignInActivity : AppCompatActivity() {
                         ) {
                             Log.d("nidhi", response.code().toString())
                             Log.d("nidhi", response.body().toString())
+                            logeduser = response.body()?.username.toString()
+                            intent.putExtra("loggeduser", logeduser)
                         }
 
                         override fun onFailure(call: Call<LoginRes>, t: Throwable) {
                             Log.d("nidhi", "failure")
                         }
                     })
+
             } catch (e: Exception) {
                 Log.e("nidhi", "Something is wrong")
             }
+
+
         }
+
 
         binding.textInputEmail.addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {

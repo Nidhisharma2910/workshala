@@ -18,7 +18,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
-import retrofit2.http.Path
+
 
 class HomeActivity : AppCompatActivity() {
 
@@ -31,29 +31,42 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_homepage)
 
+    val apiService = ApiClient.retrofit.create(RecommendedCourseApiService::class.java)
 
-        val apiService = ApiClient.retrofit.create(RecommendedCourseApiService::class.java)
+    val call: Call<List<RecommendedCourse>> = apiService.getRecommendedCourses()
 
-        val call: Call<List<RecommendedCourse>> = apiService.getRecommendedCourses()
+    call.enqueue(object : Callback<List<RecommendedCourse>> {
+        override fun onResponse(
+            call: Call<List<RecommendedCourse>>,
+            response: Response<List<RecommendedCourse>>
+        ) {
+            if (response.isSuccessful) {
+                val recommendedCourses: List<RecommendedCourse>? = response.body()
+                // Process recommendedCourses here
 
-        call.enqueue(object : Callback<List<RecommendedCourse>> {
-            override fun onResponse(
-                call: Call<List<RecommendedCourse>>,
-                response: Response<List<RecommendedCourse>>
-            ) {
-                if (response.isSuccessful) {
-                    val recommendedCourses: List<RecommendedCourse>? = response.body()
+                if (recommendedCourses != null) {
                     // Process recommendedCourses here
-
+                    for (course in recommendedCourses) {
+                        // Do something with each course
+                        println("Course Name: ${course.courseName}")
+                        println("Course Id: ${course.courseId}")
+                        // Add more fields as needed
+                    }
                 } else {
-                    // Handle error
-                }
-            }
 
-            override fun onFailure(call: Call<List<RecommendedCourse>>, t: Throwable) {
-                // Handle failure
+                }
+
+            } else {
+                // Handle error
+                println("API request failed with status code: ${response.code()}")
             }
-        })
+        }
+
+        override fun onFailure(call: Call<List<RecommendedCourse>>, t: Throwable) {
+            // Handle failure
+        }
+    })
+
 
         bottomNavigationView = findViewById(R.id.bottomNavigationView2)
 

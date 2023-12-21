@@ -59,7 +59,7 @@
                     android:layout_marginStart="8dp"
                     android:fontFamily="@font/mulish"
                     android:textStyle="bold"
-                    android:text="vidita singh"
+                    android:text="vidita"
                     android:textColor="@color/black"
                     android:textSize="@dimen/_17ssp"
                     app:layout_constraintStart_toEndOf="@+id/imageView19"
